@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from '@mui/material/Button';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex h-screen bg-gradient-to-r from-violet-500 to-fuchsia-500">
+      <div className="m-auto bg-red-300 p-8 rounded-full">
+        <h3 className="text-xl">
+            Meme Generator
+        </h3> 
+        <div className="w-full">
+          <p>
+            This is where the Meme will show up 
+          </p>
+          
+          <div className="flex items-center justify-center">
+            <Button className=""variant="contained" color="success">
+                Generate Meme
+            </Button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
